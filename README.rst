@@ -1,7 +1,8 @@
 Qt4Reactor (sitz lab edition)
+=============================
 
 Installation
-------------
+~~~~~~~~~~~~
 
 1. unzip the zipped project file, 
 2. open up a terminal in the Python environment of your choice (i.e. open a "cmd.exe" window in anaconda)
@@ -9,7 +10,7 @@ Installation
 4. run ``pip install -e ./``
 
 Usage
------
+~~~~~
 
 We use the following boilerplate in our gui applications combining twisted (i.e. pylabrad) and qt:
 ::
@@ -25,7 +26,7 @@ old readme
 ==========
 
 Using the QtReactor
--------------------
+~~~~~~~~~~~~~~~~~~~
 
 Before running / importing any other Twisted code, invoke:
 
@@ -52,14 +53,14 @@ alternatively (gui example):
     pyqt4reactor.install()
 
 Testing
-~~~~~~~
+=======
 
 ::
 
    trial --reactor=pyqt4 [twisted] [twisted.test] [twisted.test.test_internet]
 
 Testing with a Gui
-~~~~~~~~~~~~~~~~~~
+==================
 
 Twisted trial can be run for a Gui test using gtrial. Run Trial in the
 same directory as bin/gtrial and it pops up a trivial gui... hit the
