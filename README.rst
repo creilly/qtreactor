@@ -1,5 +1,28 @@
+Qt4Reactor (sitz lab edition)
 
-Qt4Reactor
+Installation
+------------
+
+1. unzip the zipped project file, 
+2. open up a terminal in the Python environment of your choice (i.e. open a "cmd.exe" window in anaconda)
+3. navigate to the root 
+4. run ``pip install -e ./``
+
+Usage
+-----
+
+We use the following boilerplate in our gui applications combining twisted (i.e. pylabrad) and qt:
+::
+
+    import sys
+    from PySide import QtGui, QtCore
+    if QtCore.QCoreApplication.instance() is None:
+        app = QtGui.QApplication(sys.argv)
+        import qt4reactor
+        qt4reactor.install()
+
+old readme
+==========
 
 Using the QtReactor
 -------------------
